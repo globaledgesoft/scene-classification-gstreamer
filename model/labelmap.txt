@@ -1,0 +1,10 @@
+auditorium
+bookstore
+bowling
+classroom
+grocerystore
+gym
+kitchen
+livingroom
+mall
+trainstation
