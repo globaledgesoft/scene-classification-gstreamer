@@ -10,13 +10,9 @@ dependencies :
 
 // To setup cross compile environment:
 
-   1) Download the Application SDK from below url:
-        https://thundercomm.s3.ap-northeast-1.amazonaws.com/shop/doc/1593776185472315/Turbox-C610_Application-SDK_v1.0.tar.gz
-  
-   2) unpack the sdk 
-        tar -xzvf Turbox-C610_Application-SDK_v1.0.tar.gz
-
-   3) execute the below script file it will ask the default target directory, press Enter and type Y
+   - To Install the Application SDK,  download the sdk using  url given in the section 2 of the of document “[TC_C610LE_23110]_TurboX C610 OK_Application SDK User Manual_V1.0.pdf“.
+   
+   - After downloading, unpack the application sdk and  execute the below script file it will ask the default target directory, press enter and type 'Y'
      ./oecore-x86_64-armv7ahf-neon-toolchain-nodistro.0.sh
  
     this complete the environment setup.
@@ -32,7 +28,7 @@ dependencies :
  
          $ $CC image_classification.c  classification.h -o classific `pkg-config --cflags --libs gstreamer-1.0`
 
-		Step-3 : Create directory named  c610 in the data directory of c610 target board.
+	Step-3 : Create directory named  c610 in the data directory of c610 target board.
 
           $ adb shell
           $ adb root
