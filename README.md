@@ -10,11 +10,15 @@ dependencies :
 
 // To setup cross compile environment:
 
-   - To Install the Application SDK,  download the sdk using  url given in the section 2 of the of document “[TC_C610LE_23110]_TurboX C610 OK_Application SDK User Manual_V1.0.pdf“.
-   
-   - After downloading, unpack the application sdk and  execute the below script file it will ask the default target directory, press enter and type 'Y'
-     ./oecore-x86_64-armv7ahf-neon-toolchain-nodistro.0.sh
- 
+   - To Install the Application SDK,  download the sdk using  url given in the section 2 of the of document 
+  ```
+    “[TC_C610LE_23110]_TurboX C610 OK_Application SDK User Manual_V1.0.pdf“.
+  ```
+    
+  - After downloading, unpack the application sdk and  execute the below script file it will ask the default target directory, press enter and type 'Y'
+    ```
+    /# ./oecore-x86_64-armv7ahf-neon-toolchain-nodistro.0.sh
+    ```
     this complete the environment setup.
 
 
