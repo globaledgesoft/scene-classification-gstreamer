@@ -52,11 +52,11 @@
          $ adb push classific /bin/
       ```   
    
-   - **Step-5:** Execute the binary file in the adb shell environment.
+   - **Step-5:** To run the executable file on dsp environment, use below command 
      ```
          $ adb shell 
          # chmod +x /bin/classific
-         # classific  dsp /data/c610/model.tflite  /data/c610/labelmap.txt 
+         /# classific  dsp /data/c610/model.tflite  /data/c610/labelmap.txt 
      ```
      
      to stop inferencing press Ctrl + c
