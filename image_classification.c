@@ -16,7 +16,6 @@ int main(int argc, char *argv[])
 	char label[100];
 	char sysType[5];
 
-        //strcpy(sysType, argv[1]); 
         strcpy(modelPath, argv[2]);                //  tflite model file 
         strcpy(label, argv[3]);                    //  labelmap file  
 
@@ -45,6 +44,8 @@ int main(int argc, char *argv[])
 
 	caps = gst_caps_new_simple ("video/x-raw", "format", G_TYPE_STRING, "NV12", "width", G_TYPE_INT, WIDTH, "height", G_TYPE_INT, HEIGHT, "framerate", GST_TYPE_FRACTION, FPS, 1, "camera", G_TYPE_INT, CAMERA_ID, NULL);
 	
+	g_object_set (source, "name", "qmmf", NULL);
+	g_object_set(source, "ldc",TRUE,  NULL);
 	g_object_set (filter, "caps", caps, NULL);
 
 	gst_bin_add_many (GST_BIN(pipeline), source, filter, tflite, overlay, enc, parse, mux, sink, NULL);
